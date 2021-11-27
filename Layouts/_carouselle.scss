@@ -1,0 +1,67 @@
+.carouselle{
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+    z-index: auto;
+    color: white;
+    height: 650px;
+    & .imgD{
+        object-fit: cover;
+        height: 650px;
+        width: 100%;
+    }
+    & .img5{
+        position: absolute;
+        top: 420px;
+        width: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    & .backCar{
+        position: absolute;
+        top: 150px;
+        left: 200px;
+        width: 500px;
+        height: 300px;
+        background: rgba(12, 12, 12, 0.7);
+        overflow: hidden;
+    }
+    & h1{
+        text-align: center;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        font-size: 80px;
+        // text-decoration:  underline;
+        animation: translateH1 10s infinite ease-in-out;
+    }
+    & .name{
+        position: absolute;
+        top: 70px;
+        left: 130px;
+        font-size: 40px;
+        font-weight: 800;
+        animation: name 10s infinite ease-in-out;
+    }
+    & .desc1{
+        position: absolute;
+        top: 140px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 30px;
+        text-align: center;
+        animation: desc1 10s infinite ease-in-out;
+    }    
+}
+
+.elements{
+    display: flex;
+    transition: 400ms linear;
+    border: 2px solid balck;
+}
+
+.element{
+    flex: 1 0 100%;
+}

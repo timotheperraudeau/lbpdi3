@@ -1,0 +1,13 @@
+{
+  "name": "projet-lbpdi3",
+  "version": "1.0.0",
+  "description": "site vitrine d'un dessinateur projetteur indépendant",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:./style.css",
+    "prefix": "postcss style.css --use autoprefixer -d prefixed"
+  },
+  "author": "Timothé Perraudeau",
+  "license": "ISC",
+  "browserslist": "last 10 versions"
+}
