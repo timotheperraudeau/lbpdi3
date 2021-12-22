@@ -1,0 +1,196 @@
+.h1Cv{
+    margin: 180px 0px 80px 0px;
+    font-size: 55px;
+    text-align: center;
+}
+
+.cv{
+    width: 80%;
+    max-width: 1000px;
+    h2{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 30px;
+        text-decoration: underline;
+    }
+    .part1{
+        display: flex;
+        background-color: rgb(96, 95, 95);
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 57%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0%, 100% 57%, 0% 100%); 
+        div:nth-child(1){
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+            margin: 25px;
+            
+            img{
+                object-fit: cover;
+                border-radius: 50%;
+                border: 5px solid white;
+            }
+        }
+        div:nth-child(2){
+            display: flex;
+            position: relative;
+            width: 100%;
+            h2{
+                margin: 0px;
+                font-size: 50px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-decoration: none;
+                span{
+                    color: white;
+                }
+            }
+        }
+    }
+    aside{
+        margin-bottom: 0px;
+    }
+    .part2{
+        margin-top: 100px;
+        display: flex;
+        article:nth-child(2){
+            width: 100%;
+            li{
+                margin: 0px 0px 15px 100px;
+            }
+        }
+        h3{
+            width: 250px;
+            text-align: center;
+            background-color: rgb(110, 110, 226);
+            margin: 0px;
+        }
+        div{
+            display: flex;
+            height: 90%;
+            div:nth-child(1){
+                width: 5px;
+                background-color: rgb(110, 110, 226);
+            }
+            div:nth-child(2){
+                width: 100%;
+            }
+        }
+    }
+    .part3{
+        margin-top: 20px;
+        display: flex;
+        article:nth-child(2){
+            width: 100%;
+            li{
+                margin: 0px 0px 15px 100px;
+            }
+        }
+        h3{
+            width: 250px;
+            text-align: center;
+            background-color: rgba(17, 42, 2, 0.231);
+            margin: 0px;
+        }
+        div{
+            display: flex;
+            height: 90%;
+            div:nth-child(1){
+                width: 5px;
+                background-color: rgba(17, 42, 2, 0.231);
+            }
+            div:nth-child(2){
+                width: 100%;
+            }
+        }
+    }
+    .part4{
+        margin-top: 20px;
+        display: flex;
+        article:nth-child(2){
+            width: 100%;
+            li{
+                margin: 0px 0px 15px 100px;
+            }
+        }
+        h3{
+            width: 250px;
+            text-align: center;
+            background-color: rgba(218, 160, 54, 0.5);
+            margin: 0px;
+        }
+        div{
+            display: flex;
+            height: 90%;
+            div:nth-child(1){
+                width: 5px;
+                background-color:   rgba(218, 160, 54, 0.5);          
+                margin: 0px;
+                
+            }
+            div:nth-child(2){
+                width: 100%;
+            }
+        }
+    }
+    .part5{
+        margin-top: 20px;
+        display: flex;
+        article:nth-child(2){
+            width: 100%;
+            li{
+                margin: 0px 0px 15px 100px;
+            }
+        }
+        h3{
+            width: 250px;
+            text-align: center;
+            background-color:rgba(133, 126, 126, 0.8);
+            margin: 0px;
+        }
+        div{
+            display: flex;
+            height: 90%;
+            div:nth-child(1){
+                width: 5px;
+                background-color:   rgba(133, 126, 126, 0.8);          
+                margin: 0px;
+                
+            }
+            div:nth-child(2){
+                width: 100%;
+            }
+        }
+    }
+    .part6{
+        margin-top: 20px;
+        margin-bottom: 100px;
+        display: flex;
+        article:nth-child(2){
+            width: 100%;
+            li{
+                margin: 0px 0px 15px 100px;
+            }
+        }
+        h3{
+            width: 250px;
+            text-align: center;
+            background-color:rgb(214, 214, 45);
+            margin: 0px;
+        }
+        div{
+            display: flex;
+            height: 90%;
+            div:nth-child(1){
+                width: 5px;
+                background-color:   rgb(214, 214, 45);          
+                margin: 0px;
+                
+            }
+            div:nth-child(2){
+                width: 100%;
+            }
+        }
+    }
+}

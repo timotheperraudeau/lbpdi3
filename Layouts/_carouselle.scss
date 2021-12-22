@@ -1,5 +1,5 @@
 .carouselle{
-    margin-top: 80px;
+    margin-top: 100px;
     position: relative;
     overflow: hidden;
     z-index: auto;
@@ -17,9 +17,20 @@
         left: 50%;
         transform: translateX(-50%);
     }
+    & .fleche-guauche, .fleche-droite{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    & .fleche-droite{
+        right: 0px;
+    }
     & .backCar{
         position: absolute;
-        top: 150px;
+        top: 125px;
         left: 200px;
         width: 500px;
         height: 300px;

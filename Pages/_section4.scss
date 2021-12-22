@@ -1,0 +1,17 @@
+.section_4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    article{
+        width: 40%;
+        text-align: justify;
+        margin-bottom: 100px;
+        h2{
+        margin: 100px 0px 40px 0px;
+        text-align: center;
+        }
+        p{
+        text-indent: 25px;
+        }
+    }
+}

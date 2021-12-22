@@ -1,0 +1,70 @@
+.formulaire{
+    background-image: url(back_sec_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 180px;
+    padding-bottom: 80px;
+    .alerte{
+        width: 100%;
+        padding: 10px;
+        color: red;
+        margin-bottom: 40px;
+        background-color: rgba(228, 116, 116, 0.5);
+    }
+    .success{
+        width: 100%;
+        padding: 10px;
+        color: blue;
+        margin-bottom: 40px;
+        background-color: rgba(82, 82, 225, 0.5);
+    }
+    h1{
+        // margin-top: 180px;
+        font-size: 40px;
+        text-align: center;
+    }
+    form{
+        width: 50%;
+        margin: auto;
+        margin-top: 80px;
+        background: white;
+        padding: 50px;
+        >div{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            label{
+                margin-bottom: 5px;
+            }
+            input{
+                font-size: 20px;
+            }
+        }
+        button{
+            color: white;
+            padding: 8px;
+            background-color: rgb(71, 71, 214);
+            font-family: "calibri";
+            font-size: 18px;
+            border-style: none;
+            border-radius: 5px;
+            &:hover{
+                box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.8);
+            }
+        }
+        &+div{
+            width: 50%;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            p{
+                text-align: justify;
+                margin-top: 0px;
+                margin-bottom: 5px;
+                font-size: 12px;
+
+            }
+        }
+    }
+}

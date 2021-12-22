@@ -1,0 +1,42 @@
+.section3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(back_sec_3.jpg);
+    background-repeat: no-repeat;
+}
+
+
+
+.descriptions{
+    background-color: white;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    min-width: 550px;
+    justify-content: space-around;
+    & img{
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-right: 10px;
+    }
+    &>div{
+        width: 250px;
+        text-align: justify;
+        & div{
+            width: 100%;
+        }
+    }
+    & p{
+        text-indent: 20px;    
+        &strong{
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+footer{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    background-color: rgb(189, 183, 183);
+    div{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px 10px 200px;
+        a{
+            text-decoration: none;
+            img{
+            width: 40px;
+            }
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    div:nth-child(2){
+        width: 100%;
+        text-align: center;
+        position: relative;
+        img{
+            width: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    div:nth-child(3){
+        margin-right: 200px;
+        a{
+            margin-top: 10px;
+        }
+    }
+}
