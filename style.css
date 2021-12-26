@@ -66,6 +66,11 @@ header {
   background: #ecdfdf;
   transition: all 100ms ease-in-out;
 }
+@media screen and (max-width: 500px) {
+  header {
+    height: 80px;
+  }
+}
 header img {
   width: 120px;
   margin: 5px 0px 10px 10px;
@@ -78,6 +83,14 @@ header img {
     left: -60px;
   }
 }
+@media screen and (max-width: 500px) {
+  header img {
+    left: -40px;
+    width: 100px;
+    top: -40px;
+  }
+}
+
 .head {
   width: 80%;
   margin: auto;
@@ -93,6 +106,11 @@ footer {
   display: flex;
   background-color: white;
 }
+@media screen and (max-width: 500px) {
+  footer {
+    flex-direction: column-reverse;
+  }
+}
 footer div {
   display: flex;
   flex-direction: column;
@@ -103,11 +121,25 @@ footer div {
     margin-left: 50px;
   }
 }
+@media screen and (max-width: 500px) {
+  footer div {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
 footer div a {
   text-decoration: none;
 }
 footer div a img {
   width: 40px;
+}
+@media screen and (max-width: 500px) {
+  footer div a img {
+    width: 40px;
+  }
 }
 footer div a:hover {
   text-decoration: underline;
@@ -250,6 +282,11 @@ nav a:hover .lettre {
     height: 450px;
   }
 }
+@media screen and (max-width: 500px) {
+  .carouselle {
+    margin-top: 80px;
+  }
+}
 .carouselle .imgD {
   object-fit: cover;
   height: 650px;
@@ -309,6 +346,11 @@ nav a:hover .lettre {
   font-size: 60px;
   font-weight: bold;
   text-decoration: underline;
+}
+@media screen and (max-width: 500px) {
+  .carouselle .backCar .titre {
+    font-size: 40px;
+  }
 }
 .carouselle h1 {
   text-align: center;
@@ -970,11 +1012,28 @@ section {
   width: 60%;
   margin: auto;
 }
+@media screen and (max-width: 900px) {
+  .formulaire .validation {
+    flex-direction: column;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .formulaire .validation {
+    width: 95%;
+  }
+}
 .formulaire form {
   width: 50%;
   margin: auto;
   margin-top: 80px;
   padding: 50px;
+}
+@media screen and (max-width: 900px) {
+  .formulaire form {
+    width: 90%;
+    padding: 0px;
+  }
 }
 .formulaire form > div {
   width: 100%;
@@ -1004,11 +1063,28 @@ section {
   width: 50%;
   margin: auto;
 }
+@media screen and (max-width: 900px) {
+  .formulaire .map {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .formulaire .map iframe {
+    width: 100%;
+    margin: auto;
+  }
+}
 .formulaire .conf {
   width: 50%;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 500px) {
+  .formulaire .conf {
+    width: 80%;
+  }
 }
 .formulaire .conf p {
   text-align: justify;
@@ -1121,6 +1197,12 @@ section {
   overflow: hidden;
   background: rgba(12, 12, 12, 0.9);
   transition: height 0.3s ease-in-out;
+}
+@media screen and (max-width: 500px) {
+  .menuDrop {
+    top: 110px;
+    width: 75%;
+  }
 }
 .menuDropActive {
   height: 230px;

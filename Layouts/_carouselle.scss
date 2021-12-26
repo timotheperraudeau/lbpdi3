@@ -8,6 +8,9 @@
     @include tablette{
         height: 450px;
     }
+    @include mobile{
+        margin-top: 80px;
+    }
     & .imgD{
         object-fit: cover;
         height: 650px;
@@ -60,6 +63,9 @@
             font-size: 60px;
             font-weight: bold;
             text-decoration: underline;
+            @include mobile{
+                font-size: 40px;
+            }
         }
     }
     & h1{

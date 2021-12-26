@@ -3,6 +3,9 @@ footer{
     margin: auto;
     display: flex;
     background-color: white;
+    @include mobile{
+        flex-direction: column-reverse;
+    }
     div{
         display: flex;
         flex-direction: column;
@@ -10,10 +13,20 @@ footer{
         @include tablette{
             margin-left: 50px;
         }
+        @include mobile{
+            margin-left: 10px;
+            margin-bottom: 20px;;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+        }
         a{
             text-decoration: none;
             img{
             width: 40px;
+            @include mobile{
+                width: 40px;
+            }
             }
             &:hover{
                 text-decoration: underline;
@@ -33,10 +46,14 @@ footer{
             @include tablette{
                 width: 200px;
             }
+            @include mobile{
+                // width: 150px;
+            }
         }
     }
     div:nth-child(3){
         margin-right: 200px;
+        // flex-direction: column;
         @include tablette{
             margin-right: 20px;
         }

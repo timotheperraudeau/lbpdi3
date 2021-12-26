@@ -29,6 +29,13 @@
         background-color: rgba(255, 255, 255, 0.9);
         width: 60%;
         margin: auto;
+        @include tablette{
+            flex-direction: column;
+            width: 80%;
+        }
+        @include mobile{
+            width: 95%;
+        }
     }
     form{
         width: 50%;
@@ -36,6 +43,10 @@
         margin-top: 80px;
         // background: white;
         padding: 50px;
+        @include tablette{
+            width: 90%;
+            padding: 0px;
+        }
         >div{
             width: 100%;
             display: flex;
@@ -64,12 +75,25 @@
     .map{
         width: 50%;
         margin: auto;
+        @include tablette{
+            width: 90%;
+            margin-bottom: 40px;
+        }
+        iframe{
+            @include tablette{
+                width: 100%;
+                margin: auto;
+            }
+        }
     }
     .conf{
         width: 50%;
         margin: auto;
         margin-top: 20px;
         margin-bottom: 20px;
+        @include mobile{
+            width: 80%;
+        }
         p{
             text-align: justify;
             margin-top: 0px;
