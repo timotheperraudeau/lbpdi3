@@ -4,7 +4,10 @@
     overflow: hidden;
     z-index: auto;
     color: white;
-    height: 650px;
+    height: 610px;
+    @include tablette{
+        height: 450px;
+    }
     & .imgD{
         object-fit: cover;
         height: 650px;
@@ -12,10 +15,13 @@
     }
     & .img5{
         position: absolute;
-        top: 420px;
+        bottom: 20px;
         width: 300px;
         left: 50%;
         transform: translateX(-50%);
+        @include tablette{
+            width: 200px;
+        }
     }
     & .fleche-guauche, .fleche-droite{
         position: absolute;
@@ -30,12 +36,31 @@
     }
     & .backCar{
         position: absolute;
-        top: 125px;
-        left: 200px;
+        top: 80px;
+        left: 100px;
         width: 500px;
         height: 300px;
         background: rgba(12, 12, 12, 0.7);
         overflow: hidden;
+        @include tablette{
+            width: 400px;
+            height: 250px;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @include mobile{
+            width: 80%;
+        }
+        .titre{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            font-size: 60px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
     }
     & h1{
         text-align: center;
@@ -45,8 +70,14 @@
         transform: translateX(-50%);
         width: 80%;
         font-size: 80px;
-        // text-decoration:  underline;
         animation: translateH1 10s infinite ease-in-out;
+        @include tablette{
+            top: -40px;
+        }
+        @include mobile{
+            font-size: 50px;
+            top: 10px;
+        }
     }
     & .name{
         position: absolute;
@@ -55,6 +86,16 @@
         font-size: 40px;
         font-weight: 800;
         animation: name 10s infinite ease-in-out;
+        @include tablette{
+            left: 0px;
+            top: 50px;
+            width: 100%;
+            text-align: center;
+            }
+        @include mobile{
+            font-size: 30px;
+            top: 70px;
+        }
     }
     & .desc1{
         position: absolute;
@@ -64,6 +105,9 @@
         font-size: 30px;
         text-align: center;
         animation: desc1 10s infinite ease-in-out;
+        @include mobile{
+            font-size: 20px;
+        }
     }    
 }
 

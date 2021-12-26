@@ -168,10 +168,44 @@
                 </a> 
                 </nav>
             </div>
+            <div class="toogle">
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
         </header>
+        <div class="menuDrop">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="realisation.html">Réalisations</a></li>
+                    <li><a href="monCv.html">Mon CV</a></li>
+                </ul>
+            </div>
+        <section class="carouselle">
+            <div class="elements">
+                <div class="element">
+                    <img class="imgD" src="img1-desk.jpg" alt="photo plans architecte">
+                </div>
+                <div class="element">
+                    <img class="imgD" src="img2-desk.jpg" alt="photo plans architecte">
+                </div>
+                <div class="element">
+                    <img class="imgD" src="img3-desk.jpg" alt="photo plans architecte">
+                </div>
+            </div>
+            <img  class="img5" src="logo-web-1.png" alt="logo">
+            <img  class="fleche-guauche" src="angle-left-solid.svg" alt="fleche guauche">
+            <img class="fleche-droite" src="angle-right-solid.svg" alt="fleche droite">
+            <div class="backCar">
+            <div class="titre">
+                Contact
+            </div>
+            </div>           
+        </section>
         <section class="formulaire">
-            
             <h1>Formulaire de contact</h1>
+            <div class="validation">
+                
             <form action="post_contact.php" method="POST">
                 <?php
                 if(array_key_exists('errors', $_SESSION)): ?>
@@ -209,8 +243,11 @@
                 <input id="recaptchaResponse" type="hidden"  name="recaptcha-response">
                 <button type="submit" >Envoyer</button> 
             </form>
-
-            <div>
+            <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30974.287263366925!2d-1.449169767049875!3d46.67087943138172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48042fe32cc50df7%3A0xe02d17f320ec19f0!2s85000%20La%20Roche-sur-Yon!5e0!3m2!1sfr!2sfr!4v1640348720490!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            </div>
+            <div class="conf">
                 
                 <p>Les informations recueillies sur ce formulaire sont enregistrées
                     dans un fichier informatisé dans le cadre strict de la demande, à 
@@ -230,11 +267,12 @@
                     mail: contact@lbpdi.fr.
                 </p>
                 <p>
-                    Si vous estimez, après nous avoir contactés, que vos droits "informatique et liberté" 
+                    Si vous estimez, après nous avoir contactés, que vos droits informatique et liberté 
                     ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL.
                 </p>
             </div>
-        </section>
+        </section>    
+        
         <footer>
                 <div>
                     <a href="https://www.facebook.com/LBPDI" target="_blank">

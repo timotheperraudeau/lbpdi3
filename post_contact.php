@@ -29,7 +29,7 @@ header('location: contact.php');
 $_SESSION['Success'] = 1;
 $message = $_POST['message'];
 $headers = 'FROM: https//www.lbpdi.fr';
-@mail("timotheeperraudeau@hotmail.fr", 'Formulaire de contact lbpdi.fr', "Nom: " . $_POST['name'] . "\n" . "Prénom: " . $_POST['surname'] . "\n" 
+@mail("contact@lbpdi.fr", 'Formulaire de contact lbpdi.fr', "Nom: " . $_POST['name'] . "\n" . "Prénom: " . $_POST['surname'] . "\n" 
 . "Mail: " . $_POST['email'] . "\n" . "Téléphone: " . $_POST['tel'] . "\n" . "Message: " . $message, $headers);  
 header('location: contact.php');
 }

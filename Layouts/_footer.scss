@@ -2,11 +2,14 @@ footer{
     width: 100%;
     margin: auto;
     display: flex;
-    background-color: rgb(189, 183, 183);
+    background-color: white;
     div{
         display: flex;
         flex-direction: column;
         margin: 10px 0px 10px 200px;
+        @include tablette{
+            margin-left: 50px;
+        }
         a{
             text-decoration: none;
             img{
@@ -22,15 +25,21 @@ footer{
         text-align: center;
         position: relative;
         img{
-            width: 50%;
+            width: 300px;
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+            @include tablette{
+                width: 200px;
+            }
         }
     }
     div:nth-child(3){
         margin-right: 200px;
+        @include tablette{
+            margin-right: 20px;
+        }
         a{
             margin-top: 10px;
         }

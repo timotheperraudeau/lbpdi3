@@ -1,6 +1,8 @@
 let compteur = 0;
 let timer, elements, slides, slidewidth;
 const retour = document.querySelector(".retour");
+const interObs = document.querySelectorAll('.interObs');
+
 
 window.onload = () => {
     const carouselle = document.querySelector(".carouselle");
@@ -43,6 +45,7 @@ function slideprev(){
     elements.style.transform = `translateX(${decal}px)`;
 }
 
+
 window.onscroll = function() {
     if(document.documentElement.scrollTop > 80) {
         document.querySelector("header").style.background = "rgba(63, 58, 58, 0.8)";
@@ -72,3 +75,37 @@ retour.addEventListener('click', () =>{
     })
 })
 
+//apparition au scroll
+
+
+
+
+let options = {
+    // root: null,
+    rootMargin: "-10px 0px",
+    threshold: 0
+}
+const observer = new IntersectionObserver(handleIntersect, options)
+
+function handleIntersect(entries){
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = "translateY(0px)";
+        }
+    })
+}
+
+interObs.forEach(inter =>{
+    observer.observe(inter)
+})
+    
+//animation du bouton de navigation
+
+const burger = document.querySelector(".burger");
+const dropMenu = document.querySelector('.menuDrop');
+
+burger.addEventListener('click',() => {
+    burger.classList.toggle('active');
+    dropMenu.classList.toggle('menuDropActive');
+})

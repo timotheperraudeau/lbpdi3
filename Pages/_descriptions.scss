@@ -1,25 +1,35 @@
 .section3{
     width: 100%;
     display: flex;
-    justify-content: center;
-    background-image: url(back_sec_3.jpg);
+    background-image: url(back_sec3.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+
 }
 
 
 
 .descriptions{
+    width: 50%;
+    margin: auto;
     background-color: white;
-    padding: 50px 0px 50px 0px;
+    padding: 50px 40px 50px 40px;
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 60%;
-    min-width: 550px;
+    flex-wrap: wrap; 
+    // min-width: 550px;
     justify-content: space-around;
+    border-radius: 5px;
+    box-sizing: border-box;
+    @include tablette{
+        // padding: 50px 10px 50px 10px;
+        width: 90%;
+    }
     & img{
         width: 50px;
         height: 50px;
@@ -27,16 +37,53 @@
         margin-right: 10px;
     }
     &>div{
-        width: 250px;
+        width: 300px;
         text-align: justify;
+        flex-wrap: wrap;
         & div{
             width: 100%;
         }
     }
+    & div:nth-child(1){
+        margin-right: 30px;
+        @include tablette{
+            margin-bottom: 50px;
+        }
+    }
     & p{
         text-indent: 20px;    
+        font-size: 20px;
         &strong{
             font-weight: bold;
+        }
+    }
+    
+}
+.services{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: white;
+    padding: 50px 0px 50px 0px;
+    border-radius: 5px;
+    @include tablette{
+        width: 90%;
+    }
+    h2{
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: 0px;
+        font-size: 25px;
+    }
+    p{
+        width: 50%;
+        margin: auto;
+        text-align: justify;
+        text-indent: 15px;
+        margin-top: 10px;
+        font-size: 18px;
+        @include tablette{
+            width: 80%;
         }
     }
 }

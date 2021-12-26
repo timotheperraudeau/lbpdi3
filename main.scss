@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/keyframes";
+@import "./utils/breakpoints";
 @import "./Layouts/header";
 @import "./Layouts/footer";
 @import "./Layouts/nav";
@@ -10,7 +11,9 @@
 @import "./Base/sectionSize";
 @import "./Pages/mecontacter";
 @import "./Pages/descriptions";
-@import "./Pages/section4";
 @import "./Pages/monCv";
 @import "./Pages/formulaire";
+@import "./Pages/realisation";
 @import "./Composants/retour";
+@import "./Composants/intersection";
+@import "./Composants/burger";

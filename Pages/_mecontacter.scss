@@ -4,29 +4,72 @@
     color: white;
     background-color: rgb(53, 52, 52);
     padding-top: 30px;
-    position: relative;
+    display: flex;
+    z-index: -100;
+        @include tablette{
+            height: 50px;
+            padding-top: 20px;
+        }
     h2{
         margin: 0px;
-        margin-left: 220px;
+        margin-left: 80px;
+        white-space: nowrap;
+        @include tablette{
+            margin-left: 20px;
+            font-size: 20px;
+        }
+    }
+    a{
+        text-decoration: none;
     }
     .bouton{
         width: 110px;
-        position: absolute;
-        top: 30px;
-        right: 300px;
-        background-color: grey;
         text-align: center;
         padding: 10px;
         border-radius: 5px;
-        color: white;
+        color: black;
         font-weight: bold;
-        &_hover{
-            background-color: yellow;
-            color: black;
-            transition: 0.2s ease-in-out;
-            &:hover{
-                opacity: 0;
-            }
+        position: relative;
+        margin-left: 300px;
+        overflow: hidden;
+        z-index: 1;
+        @include tablette{
+            margin-left: 15vw;
+            margin-top: -5px;
         }
+        &::before{
+            content:'';
+            padding-top: 10px;
+            text-align: center;
+            width: 0px;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            overflow: hidden;
+            background-color: rgb(154, 149, 149);
+            color: white;
+            transition: width 0.1s ease-in-out;
+            transition-delay: color .1s;
+            white-space: nowrap;
+            z-index: -1;
+        }
+        &::after{
+            content:'';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: yellow;
+            z-index: -2;
+            // border: 2px solid white;
+        }
+    }
+    .bouton:hover.bouton::before{
+        width: 100%;
+    }
+    .bouton:hover{
+        color: white;
     }
 }
